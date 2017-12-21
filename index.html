@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top nav-color" id="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="color: #f7f7f7" href="#">Solvio</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="row">
+                <div id="jumbotron-content" class="col-lg-12" style="color: #f7f7f7">
+                    <img class="logo" src="logo.svg" alt="logo">
+                    <p>
+                        <small>Sign up for beta testing</small>
+                    </p>
+                    <a href="#" class="btn nav-color btn-lg" style="color: #f7f7f7">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="startchange">
+        <h1 class="col-md-12 text-center" style="margin-bottom: 50px">Solvio Features</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-pencil"></span></div>Create Tests</div>
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-home"></span></div>Take Tests from home with Solvio's built in proctoring service</div>
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-edit"></span></div>Intuitive for students and instructors</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-lock"></span></div>Keep your records safe with Solvio's secure system</div>
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-send"></span></div>Computer or paper test compatible</div>
+            <div class="col-md-4 text-center"><div style="text-align:center"><span class="glyphicon glyphicon-time"></span></div>Save time by replacing multiple software services with Solvio</div>
+            <!--mobile friendly-->
+        </div>
+
+    </div>
+    <hr>
+    <div class="container">
+        <div class="well-lg">
+            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+    <hr>
+    <div class="container">
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+    <hr>
+    <div class="container">
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    </div>
+    <hr>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row" style="text-align: center">
+                <div class="col-md-3">Contact Us</div>
+                <div class="col-md-3">Documentation</div>
+                <div class="col-md-3">Legal</div>
+                <div class="col-md-3">Learn More</div>
+            </div>
+            <p class="text-center"><strong>Solvio &copy; 2017 <a href="https://weber.edu" target="_blank">Weber State University</a></strong></p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var scroll_start = 0;
+            var startchange = $('#startchange');
+            var offset = startchange.offset();
+            $(document).scroll(function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top - 84) {
+                    $('#navbar').css('background-color', 'black');
+                } else {
+                    $('#navbar').css('background-color', 'transparent');
+                }
+            });
+        });
+    </script>
+
+</body>
+<style lang="stylus">
+    body {
+        background-color: #f7f7f7
+    }
+
+    .jumbotron {
+        position: relative;
+        background: #000 url("https://photos.smugmug.com/photos/i-jvGVKSk/0/5848e145/X3/i-jvGVKSk-X3.jpg") center center;
+        width: 100%;
+        height: 950px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .nav-color {
+        /*background-color: rgba(2,123,227,0.1);*/
+    }
+
+    #jumbotron-content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .glyphicon {
+        font-size: 100px;
+        color: #26a69a;
+        margin: 25px;
+    }
+
+    .glyphicon:hover {
+        color: black;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    footer {
+        /*background-color: #777777;*/
+        padding-top: 25px;
+    }
+
+    .nav a {
+        color: lightgrey;
+    }
+
+    ul.nav a:hover {
+        text-decoration: underline;
+        background-color: rgba(211,211,211,0.0);
+        /*background-color: #027be3;*/
+    }
+
+    ul.nav a:focus {
+        /*background-color: #027be3;*/
+    }
+
+    /*ul.nav a:focus {*/
+        /*text-decoration: underline;*/
+    /*}*/
+
+    #opacity-test {
+        background: rgba(200, 54, 54, 0.1);
+    }
+
+    #navbar {
+        transition: 1s;
+        opacity: .75;
+    }
+
+</style>
+</html>
